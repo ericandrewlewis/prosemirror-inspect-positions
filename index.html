@@ -1,0 +1,26 @@
+<!doctype html>
+
+<meta charset="utf-8"/>
+<title>ProseMirror revision browser</title>
+
+<h1>Inspect positions in a ProseMirror document</h1>
+
+<div id=content style="display: none">
+  <h2>Some content</h2>
+  <p>This is a paragraph with some text in it.</p>
+  <p>And this is <strong>another one</strong>!</p>
+</div>
+
+<div id=editor></div>
+<table id=positionInfo></table>
+<div id=cursorPositionInfo></div>
+<script src="dist/index.js"></script>
+
+<style>
+  body { font-family: Georgia }
+  #positionInfo, #cursorPositionInfo {
+    font-family: monospace;
+    margin: 30px;
+  }
+  .ProseMirror-content { border: 1px solid silver; padding: 0 15px }
+</style>
